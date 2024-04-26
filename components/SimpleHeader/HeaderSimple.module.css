@@ -12,6 +12,15 @@
   align-items: center;
 }
 
+/* .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-0));
+  font-size: var(--mantine-font-size-sm);
+  font-weight: 500;
+} */
+
 .link {
   display: block;
   line-height: 1;
