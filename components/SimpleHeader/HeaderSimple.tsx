@@ -1,11 +1,11 @@
 'use client';
 
-import { useState } from 'react';
+// import { useState } from 'react';
 import { Container, Group, Burger, useMantineColorScheme } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconBrandMantine, IconMoonStars } from '@tabler/icons-react';
-import classes from './HeaderSimple.module.css';
 import Link from 'next/link';
+import classes from './HeaderSimple.module.css';
 
 const links = [
   { link: '/', label: 'Home' },
