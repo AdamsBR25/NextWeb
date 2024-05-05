@@ -10,8 +10,8 @@ import classes from './HeaderSimple.module.css';
 const links = [
   { link: '/', label: 'Home' },
   { link: '/about/', label: 'About' },
-  { link: '/learn', label: 'Next' },
-  { link: '/community', label: 'Mantine' },
+  { link: '/projects', label: 'Projects' },
+  { link: 'https://github.com/adamsbr25', label: 'GitHub' },
 ];
 
 export function HeaderSimple() {

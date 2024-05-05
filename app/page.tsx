@@ -1,5 +1,5 @@
+import { Button, Group } from '@mantine/core';
 import { Welcome } from '../components/Welcome/Welcome';
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 import { HeaderSimple } from '../components/SimpleHeader/HeaderSimple';
 
 export default function HomePage() {
@@ -7,7 +7,11 @@ export default function HomePage() {
     <>
       <HeaderSimple />
       <Welcome />
-      <ColorSchemeToggle />
+      <Group justify="center" mt="xl">
+            <Button component="a" href="/about">About</Button>
+            <Button component="a" disabled>Projects</Button>
+            <Button component="a" href="https://github.com/adamsbr25">My GitHub</Button>
+      </Group>
     </>
   );
 }
