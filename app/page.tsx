@@ -9,7 +9,7 @@ export default function HomePage() {
       <Welcome />
       <Group justify="center" mt="xl">
             <Button component="a" href="/about">About</Button>
-            <Button component="a" disabled>Projects</Button>
+            <Button component="a" href="/projects">Projects</Button>
             <Button component="a" href="https://github.com/adamsbr25">My GitHub</Button>
       </Group>
     </>
