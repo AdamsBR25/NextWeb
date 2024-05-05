@@ -3,7 +3,8 @@
 // import { useState } from 'react';
 import { Container, Group, Burger, useMantineColorScheme } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import { IconBrandMantine, IconMoonStars } from '@tabler/icons-react';
+import { IconMoonStars } from '@tabler/icons-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import classes from './HeaderSimple.module.css';
 
@@ -16,7 +17,6 @@ const links = [
 
 export function HeaderSimple() {
   const [opened, { toggle }] = useDisclosure(false);
-  // const [active, setActive] = useState(links[0].link);
   const { toggleColorScheme } = useMantineColorScheme();
 
   const items = links.map((link) => (
@@ -24,11 +24,6 @@ export function HeaderSimple() {
       key={link.label}
       href={link.link}
       className={classes.link}
-      // data-active={active === link.link || undefined}
-      // onClick={(event) => {
-      // event.preventDefault();
-      // setActive(link.link);
-      // }}
     >
       {link.label}
     </a>
@@ -37,13 +32,20 @@ export function HeaderSimple() {
   return (
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
-        <Link href="/" className="logo">
-          {' '}
-          <IconBrandMantine size={50} />
+        <Link
+          href="/"
+          className="link"
+        >
+          <Image
+            src="/apple-touch-icon.png"
+            width={28}
+            height={28}
+            alt="site icon"
+          />
         </Link>
         <Group gap={5} visibleFrom="xs">
           {items}
-          <IconMoonStars className="toggle" size={25} onClick={() => toggleColorScheme()} />
+          <IconMoonStars className="toggle" size={22} onClick={() => toggleColorScheme()} />
         </Group>
 
         <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />

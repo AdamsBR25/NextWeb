@@ -5,7 +5,7 @@ import { theme } from '../theme';
 
 export const metadata = {
   title: 'Brady Adams Website',
-  description: 'I am using Mantine with Next.js!',
+  description: 'Brady Adams Development Site',
 };
 
 export default function RootLayout({ children }: { children: any }) {
